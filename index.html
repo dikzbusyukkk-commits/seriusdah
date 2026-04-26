@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shadow Login</title>
+  <style>
+      h1 {
+          text-align: center;
+      }
+      h2 {
+          text-align: center;
+      }
+      h3 {
+          text-align: center;
+      }
+      
+  </style>
+</head>
+<body>
+<div class="main-box">
+    <h1>ShadowDarkAdm</h1>
+    <h2>Masuk ke Dashboard</h2>
+    
+    <div class="back-box">
+        <div class="container">
+            <h3>Login</h3>
+            
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <form onsubmit="return login()">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+function login() {
+    var user = document.querySelector('input[type="text"]').value;
+    var pass = document.querySelector('input[type="password"]').value;
+
+    if(user === "admin" && pass === "admin123") {
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Username atau Password salah!");
+    }
+
+    return false;
+}
+</script>
+
+</body>
+</html>
