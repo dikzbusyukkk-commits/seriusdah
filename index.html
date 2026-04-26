@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shadow Login</title>
+  <style>
+      h1 {
+          text-align: center;
+          color: white;
+      }
+      h2 {
+          text-align: center;
+          font-size: 100%;
+          transform: translateY(-20px);
+          font-weight: 450;
+          color: #cbcbcb;
+      }
+      h3 {
+          text-align: center;
+          color: #8b8b8b;
+          transform: translateY(80px);
+      }
+      h4 {
+          text-align: center;
+          transform: translateY(-263%) translateX(5%);
+          font-size: 27px;
+          color: white;
+      }
+      .profil {
+          width: 67px;
+          height: 67px;
+          border-radius: 50%;
+          transform: translateY(10%) translateX(10%);
+      }
+      html, body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      .container {
+          width: 200px;
+          margin: 50px auto;
+          transform: translateY(-10%);
+      }
+      input, button {
+          display: block;
+          padding: 15px;
+          width: 100%;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 8px;
+          color: white;
+          cursor: pointer;
+          background: linear-gradient(135deg, #1e3c72, #2a5298);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+          transform: translateX(-10px) translateY(70px);
+      }
+      button {
+          transform: translateX(3%) translateY(80px);
+      }
+      body {
+          min-height: 100vh;
+          background: linear-gradient(135deg, #0a1f44, #0f2a5c, #081a3a);
+      }
+      .credit {
+          color: white;
+          position: bottom;
+          transform: translateY(270px);
+          width: 100%;
+          text-align: center;
+          font-size: 14px;
+          white-space: nowrap;
+      }
+      .back-box {
+          padding: 5px;
+          width: 87%;
+          transform: translateX(20px) translateY(-120px);
+          background: rgba(255,255,255,0.05);
+          border-radius: 28px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      }
+      .main-box {
+          transform: translateY(80px);
+      }
+  </style>
+</head>
+<body>
+<img src="logo.jpg" alt="foto profil" class="profil">
+
+<h4>Shadow Login Test</h4>
+
+<div class="main-box">
+    <h1>ShadowDarkAdm</h1>
+    <h2>Masuk ke Dashboard</h2>
+    
+    <div class="back-box">
+        <div class="container">
+            <h3>Login</h3>
+            
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <form onsubmit="return login()">
+                <button type="submit">Enter</button>
+            </form>
+            <p class="credit">®2026 Created by Shadow(Raja)</p>
+         </div>
+     </div>
+</div>
+<script>
+function login() {
+    /*var user = document.querySelector('input[type="text"]').value;
+      var pass = document.querySelec('input[type="password"]').value;
+
+    if(user === "admin" && pass === "admin123") {
+       */ window.location.href = "dashboard.html";
+       /*} else {
+         alert("Username atau Password salah!");
+    }
+
+    return false;*/
+}
+</script>
+</body>
+</html>

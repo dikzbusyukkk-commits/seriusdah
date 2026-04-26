@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow - Perkenalan Diri</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                #2a0000 0%, 
+                #4a0000 30%, 
+                #8b0000 60%, 
+                #2a0000 100%);
+            position: relative;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        /* Gambar kecil bulat di atas */
+        .profile-image {
+            transform: translateY(-70px);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff4d4d;
+            box-shadow: 0 0 25px rgba(255, 77, 77, 0.8);
+            margin-bottom: 20px;
+            opacity: 1;           /* Full opacity */
+            z-index: 3;
+        }
+
+        .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.3rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 10px;
+            transform: translateY(-170px);
+            background: linear-gradient(to right, #ff3333, #ff9999, #ff3333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 40px rgba(255, 50, 50, 0.6);
+        }
+
+        .title {
+            font-size: 1.4rem;
+            color: #ff9999;
+            letter-spacing: 6px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            transform: translateY(-160px);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #ffcccc;
+            opacity: 0.85;
+            transform: translateY(-150px);
+        }
+        
+        .telegram-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 28px;
+            transform: translateY(290px);
+            background: rgba(255, 77, 77, 0.2);
+            color: #ff9999;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border: 2px solid #ff4d4d;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            z-index: 3;
+         }
+
+        .telegram-link:hover {
+            background: #ff4d4d;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 77, 77, 0.6);
+        }
+        
+        .credit {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.85rem;
+            color: #ff6666;
+            opacity: 0.6;
+            text-align: center;
+            z-index: 3;
+            line-height: 1.4;
+            pointer-events: none; /* supaya tidak mengganggu klik */
+        }
+
+        .credit:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Ganti link ini dengan gambar kamu -->
+        <img src="logo.jpg" alt="Profil" class="profile-image">
+        
+        <a href="https://t.me/shadowLagiTidur" target="_blank" class="telegram-link">
+        <i>📬</i> My Telegram woi
+        </a>
+
+        <h1 class="name">SHADOW</h1>
+        <p class="title">DARK ENTITY</p>
+        
+        <div class="credit">
+    © 2026 Shadow(Raja) • All Rights Reserved
+</div>
+        
+        <p class="description">
+            Aku adalah bayangan yang lahir dari kegelapan<br>
+            Aku bagaikan kegelapan yang muncul di tengah cahaya<br>
+            Kata kata alay cuma pemanis doang asw😹
+        </p>
+    </div>
+
+</body>
+</html>
