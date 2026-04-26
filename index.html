@@ -109,7 +109,8 @@
      </div>
 </div>
 <script>
-function login() {
+function login(event) {
+    event.preventDefault();
     var user = document.querySelector('input[type="text"]').value;
       var pass = document.querySelec('input[type="password"]').value;
 
