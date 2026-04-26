@@ -99,10 +99,10 @@
         <div class="container">
             <h3>Login</h3>
             
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <form onsubmit="login(event)">
-                <button type="submit">Enter</button>
+            <form onsubmit="return login(event)">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Enter</button>
             </form>
             <p class="credit">®2026 Created by Shadow(Raja)</p>
          </div>
