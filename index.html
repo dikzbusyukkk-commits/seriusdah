@@ -101,7 +101,7 @@
             
             <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
-            <form onsubmit="return login()">
+            <form onsubmit="login(event)">
                 <button type="submit">Enter</button>
             </form>
             <p class="credit">®2026 Created by Shadow(Raja)</p>
@@ -110,16 +110,16 @@
 </div>
 <script>
 function login() {
-    /*var user = document.querySelector('input[type="text"]').value;
+    var user = document.querySelector('input[type="text"]').value;
       var pass = document.querySelec('input[type="password"]').value;
 
     if(user === "admin" && pass === "admin123") {
        */ window.location.href = "dashboard.html";
-       /*} else {
+       } else {
          alert("Username atau Password salah!");
     }
 
-    return false;*/
+    return false;
 }
 </script>
 </body>
